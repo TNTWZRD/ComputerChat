@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef HSOCK_H
+#define HSOCK_H
+
 #include <Windows.h>
 #include <winsock.h>
 
@@ -10,3 +13,5 @@ public:
 	void CloseConnection();
 };
 
+
+#endif // defined(HSOCK_H)
