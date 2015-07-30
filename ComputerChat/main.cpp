@@ -10,7 +10,7 @@ int main()
 	bool endall = 0;
 	while (!endall)
 	{
-		chat ChatInitialize;
+		Chat ChatInitialize;
 
 		cout << "Press SPACE to end the program, press any other key to continue." << endl;
 		char i = _getch();

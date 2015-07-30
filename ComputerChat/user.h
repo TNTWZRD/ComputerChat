@@ -8,12 +8,18 @@
 
 using namespace std;
 
-class user
+class User
 {
 public:
-	string UserName;
-	vector<string> conversation;
-	user(string name);
+    // Public constructor
+    User(string name);
+
+	
+    string UserName;
+    vector<string> conversation;
+	
+
+    virtual ~User();
 private:
 
 };

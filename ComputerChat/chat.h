@@ -10,10 +10,13 @@
 #include "hostSocket.h"
 #include "user.h"
 
-class chat
+class Chat
 {
 public:
-	chat();
+    // Public constructor
+    Chat();
+
+    virtual ~Chat();
 };
 
 #endif // defined(CHAT_H)

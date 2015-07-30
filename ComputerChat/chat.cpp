@@ -1,6 +1,6 @@
 #include "chat.h"
 
-chat::chat()
+Chat::Chat()
 {
 	enum programState
 	{
@@ -15,7 +15,7 @@ chat::chat()
 
 	while (pState == programState::STARTUP) // Startup Code
 	{
-		cout << "Loading TheTechSphere Computer Chat Application..." << endl << "Software Version 00.01.01" << endl;
+		cout << "Loading TheTechSphere Computer Chat Application..." << endl << "\n\tSoftware Version 00.01.01\n\n" << endl;
 		bool modeSelection = 0;
 		while (!modeSelection)
 		{
@@ -24,16 +24,16 @@ chat::chat()
 			switch (i)
 			{
 			case '1':
-				modeselection = 1;
+				modeSelection = 1;
 				pState = programState::HOSTING_MODE;
 				break;
 			case '2':
-				modeselection = 1;
+				modeSelection = 1;
 				pState = programState::MAINMENU;
 				break;
-			defualt:
+			default:
 				cout << "Please Enter Either (1) Or (2)......" << endl;
-				breack;
+				break;
 			}
 		}
 

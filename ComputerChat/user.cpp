@@ -1,7 +1,7 @@
 #include "user.h"
 
 
-user::user(string name)
+User::User(string name)
 {
 	UserName = name;
 }

@@ -9,12 +9,12 @@
 
 enum PORT_MESSAGE
 {
-	SOCK_CANNOT_LISTEN,
-	SOCK_WAITING,
-	SOCK_DEAD,
-	SOCK_TIMEOUT,
-	SOCK_CONNECTED,
-	SOCK_PIPE_ACTIVE,
+    SOCK_CANNOT_LISTEN,
+    SOCK_WAITING,
+    SOCK_DEAD,
+    SOCK_TIMEOUT,
+    SOCK_CONNECTED,
+    SOCK_PIPE_ACTIVE,
 };
 
 
@@ -22,9 +22,19 @@ enum PORT_MESSAGE
 class clientSocket
 {
 public:
-	bool ConnectToHost(int PortNo, char* IPAddress);
+    /**
+     * \param _portno - Default client port
+     * \param 
+     */
+    clientSocket(int _portno, string clientUID);
+
+
+    bool ConnectToHost(int PortNo, char* IPAddress);
 	
-	void CloseConnection();
+    void CloseConnection();
+
+
+    virtual ~clientSocket();
 };
 
 #endif // defined(CSOCK_H)

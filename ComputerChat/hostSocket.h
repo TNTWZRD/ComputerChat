@@ -9,8 +9,14 @@
 class hostSocket
 {
 public:
-	int ListenOnPort(int portno);
-	void CloseConnection();
+    /**
+     * \brief Listens on main port
+     * \param portno - INT 
+     */
+    int ListenOnPort(int portno);
+
+    // Close main host socket connection
+    void CloseConnection();
 };
 
 
