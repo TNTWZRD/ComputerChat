@@ -8,8 +8,6 @@
 
 #define MIN_PIPED_OBJECTS 1
 
-#define AUTH_KEY_PATH "%UserProfile%\AppData\Local\CompChat\bin\auth\key\.auth_key"
-
 enum PORT_MESSAGE
 {
     SOCK_CANNOT_LISTEN,
@@ -20,17 +18,6 @@ enum PORT_MESSAGE
     SOCK_PIPE_ACTIVE,
 };
 
-// ---------------------
-// Auth Definitions
-// TODO: Put in seperate <auth.h> file. Leave here for now.
-// ---------------------
-
-typedef DWORD64 AUTH_L;
-
-// ---------------------
-// ! Auth Definitions !
-// ---------------------
-
 class clientSocket
 {
 public:
@@ -39,14 +26,12 @@ public:
      * \param 
      */
     clientSocket(int _portno, string clientUID);
-
-    bool verifyAuthSignature(const char *path, );
     
     bool ConnectToHost(int PortNo, char* IPAddress);
 	
     void CloseConnection();
 
-
+    // Deconstructor
     virtual ~clientSocket();
 };
 
