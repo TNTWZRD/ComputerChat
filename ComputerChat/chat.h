@@ -16,6 +16,7 @@ public:
     // Public constructor
     Chat();
 
+    // Deconstructor
     virtual ~Chat();
 };
 

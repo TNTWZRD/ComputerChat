@@ -17,23 +17,20 @@ enum PORT_MESSAGE
     SOCK_PIPE_ACTIVE,
 };
 
-
-
 class clientSocket
 {
 public:
     /**
      * \param _portno - Default client port
-     * \param 
+     * \param clientUID - Default client user ID
      */
     clientSocket(int _portno, string clientUID);
-
 
     bool ConnectToHost(int PortNo, char* IPAddress);
 	
     void CloseConnection();
 
-
+    // Deconstructor
     virtual ~clientSocket();
 };
 

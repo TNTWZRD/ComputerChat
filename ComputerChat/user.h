@@ -18,7 +18,7 @@ public:
     string UserName;
     vector<string> conversation;
 	
-
+    // Deconstructor
     virtual ~User();
 private:
 
