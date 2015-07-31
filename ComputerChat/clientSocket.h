@@ -23,7 +23,7 @@ class clientSocket
 public:
     /**
      * \param _portno - Default client port
-     * \param 
+     * \param clientUID - Default client name to pass to the server
      */
     clientSocket(int _portno, string clientUID);
     
