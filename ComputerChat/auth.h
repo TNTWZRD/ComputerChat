@@ -9,6 +9,9 @@
 
 #define AUTH_KEY_PATH "%UserProfile%\AppData\Local\CompChat\bin\auth\key\.auth_key"
 
+#define MAX_AUTH_REQUESTS 5
+#define MAX_HANDSHAKES 2
+
 // ---------------------
 // Auth Definitions
 // ---------------------
