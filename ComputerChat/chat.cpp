@@ -19,25 +19,48 @@ chat::chat()
 		bool modeSelection = 0;
 		while(!modeSelection)
 		{
-			cout << "Please Select A Mode: (1)HOST (2)CLIENT" << endl;
+			cout << "Please Select A Mode: (1)HOST (2)CLIENT (ESC)QUIT" << endl;
 			char i = _getch();
 			switch (i)
 			{
 			case '1':
-				modeselection = 1;
+				modeSelection = 1;
 				pState = programState::HOSTING_MODE;
 				break;
 			case '2':
-				modeselection = 1;
+				modeSelection = 1;
 				pState = programState::MAINMENU;
 				break;
-			defualt:
-				cout << "Please Enter Either (1) Or (2)......" << endl;
-				breack;
+			case VK_ESCAPE:
+				modeSelection = 1;
+				pState = programState::LOGOUT;
+				break;
+			default:
+				modeSelection = 1;
+				pState = programState::MAINMENU;
+				break;
 			}
 		}
-		
-		
+	}
+
+	while (pState == programState::HOSTING_MODE) // Hosting Code
+	{
+		cout << "Loaded Hosting Mode" << endl;
+
+		pState = programState::LOGOUT;
+	}
+
+	while (pState == programState::MAINMENU) // Main Menu Code
+	{
+		cout << "Loaded Main Menu Mode" << endl;
+
+		pState = programState::LOGOUT;
+	}
+
+	while (pState == programState::CHATSCREEN) // Chat Screen Code
+	{
+		cout << "Loaded Chat Screen Mode" << endl;
+
 		pState = programState::LOGOUT;
 	}
 
