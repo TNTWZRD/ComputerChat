@@ -24,6 +24,19 @@ struct _simci
 class Chat
 {
 public:
+    // --------------------
+    // Public Chat Flags
+    // --------------------
+    static enum CHAT_FLAG
+    {
+        USER_TYPING,
+        USER_SENT,
+        USER_WAITING,
+        USER_RECIEVED,
+        USER_HALTED_ALL_PROC,
+        USER_STARTED_PROC
+    };
+
     // Public constructor
     Chat();
 

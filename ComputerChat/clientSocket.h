@@ -21,7 +21,7 @@ enum PORT_MESSAGE
 // ---------------------
 // Client Port Defaults
 // ---------------------
-    
+
 unsigned int __defaultPort = 2202;
 
 // ---------------------
@@ -36,9 +36,9 @@ public:
      * \param clientUID - Default client name to pass to the server
      */
     clientSocket(int _portno, string clientUID);
-    
+
     bool ConnectToHost(int PortNo, char* IPAddress);
-	
+
     void CloseConnection();
 
     // Deconstructor
