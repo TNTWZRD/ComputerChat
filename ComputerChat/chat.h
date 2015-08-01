@@ -7,9 +7,19 @@
 #include <cstdint>
 #include <conio.h>
 
+#include "typekey.h"
+
 #include "clientSocket.h"
 #include "hostSocket.h"
 #include "user.h"
+
+// Public simplicity keys
+struct _simci
+{
+    UINT32 _cip32;
+    UINT32 _fetchkey;
+    UINT32 _sendkey;
+};
 
 class Chat
 {
@@ -19,7 +29,7 @@ public:
 
     std::vector<int> createVar(std::vector<int> _rval)
     {
-        if(ret <= 0)
+        if(_rval <= 0)
         {
             
         }
