@@ -4,6 +4,7 @@
 #define CHAT_H
 
 #include <iostream>
+#include <cstdint>
 #include <conio.h>
 
 #include "clientSocket.h"
@@ -15,6 +16,15 @@ class Chat
 public:
     // Public constructor
     Chat();
+
+    std::vector<int> createVar(std::vector<int> _rval)
+    {
+        if(ret <= 0)
+        {
+            
+        }
+        return _rval;
+    }
 
     // Deconstructor
     virtual ~Chat();
