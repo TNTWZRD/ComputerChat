@@ -18,6 +18,16 @@ enum PORT_MESSAGE
     SOCK_PIPE_ACTIVE,
 };
 
+// ---------------------
+// Client Port Defaults
+// ---------------------
+    
+unsigned int __defaultPort = 2202;
+
+// ---------------------
+// ! Client Port defaults !
+// ---------------------
+
 class clientSocket
 {
 public:
