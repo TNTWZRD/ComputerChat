@@ -20,7 +20,6 @@
     <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Visual Studio 2013\Projects\MyGame\MyGame\CLS.cpp" />
     <ClCompile Include="chat.cpp" />
     <ClCompile Include="ClientMode.cpp" />
     <ClCompile Include="clientSocket.cpp" />

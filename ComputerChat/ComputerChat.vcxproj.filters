@@ -59,9 +59,6 @@
     <ClCompile Include="ClientMode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Visual Studio 2013\Projects\MyGame\MyGame\CLS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CLS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

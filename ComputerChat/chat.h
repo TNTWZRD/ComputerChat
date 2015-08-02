@@ -6,7 +6,6 @@
 
 #include "ClientMode.h"
 #include "HostMode.h"
-#include "CLS.h"
 
 using namespace std;
 
