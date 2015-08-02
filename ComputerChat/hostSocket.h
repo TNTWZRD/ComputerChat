@@ -11,7 +11,7 @@ class hostSocket
 public:
     /**
      * \brief Listens on main port
-     * \param portno - INT 
+     * \param portno - INT
      */
     int ListenOnPort(int portno);
 

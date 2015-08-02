@@ -6,8 +6,9 @@
 #include <basetsd.h>
 
 #include "typekey.h"
+#include "chat.h"
 
-#define AUTH_KEY_PATH "%UserProfile%\AppData\Local\CompChat\bin\auth\key\.auth_key"
+#define AUTH_KEY_PATH "%UserProfile%/AppData/Local/CompChat/bin/auth/key/.auth_key"
 
 #define MAX_AUTH_REQUESTS 5
 #define MAX_HANDSHAKES 2
@@ -28,13 +29,30 @@
 
 class Auth
 {
+    // Private class accessors for flags
+    // DO NOT EDIT UNLESS YOU KNOW EXPLICITY WHAT YOU'RE DOING!
+    private:
+        bool didAuthFinish;
+        bool dumpAuthMismatch;
+        bool forceAuthMismatch;
+
     public:
+        // Public constructor
         Auth(AUTH_L keylen, const char *path) __KEY_EXPORT;
 
+        // Public deconstructor
         virtual ~Auth() __KEY_EXPORT;
 
     public:
-        AUTH_L createAuthKey();
+        AUTH_L createAuthKey(long len,
+                             std::string authname
+                             short port,
+                             std::string servname,
+                            ) __KEY_EXPORT;
+
+        AUTH_L acceptKey(struct _simci *keys,
+                         std::vector<double> *keylen)
+                         __KEY_EXPORT;
 };
 
 #endif // defined(AUTH_H)

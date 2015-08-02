@@ -14,10 +14,10 @@ public:
     // Public constructor
     User(string name);
 
-	
+
     string UserName;
     vector<string> conversation;
-	
+
     // Deconstructor
     virtual ~User();
 private:

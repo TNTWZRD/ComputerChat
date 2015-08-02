@@ -24,6 +24,7 @@ struct _simci
 class Chat
 {
 public:
+
     // --------------------
     // Public Chat Flags
     // --------------------
@@ -44,7 +45,7 @@ public:
     {
         if(_rval <= 0)
         {
-            
+
         }
         return _rval;
     }
