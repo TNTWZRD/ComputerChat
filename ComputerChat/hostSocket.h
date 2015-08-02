@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <winsock.h>
 
-class hostSocket
+class HostSocket
 {
 public:
 	int ListenOnPort(int portno);

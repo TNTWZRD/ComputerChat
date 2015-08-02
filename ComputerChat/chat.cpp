@@ -2,7 +2,7 @@
 
 CLS cls;
 
-chat::chat()
+Chat::Chat()
 {
 	enum programState
 	{
