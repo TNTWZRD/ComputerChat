@@ -36,7 +36,8 @@ class ClientMode
             return _cMode;
         }
 
-    private:
+    // Redefined as protected for inheritence within <Handshake.h>
+    protected:
 	void mainMenu();
 
 	string _ip;
