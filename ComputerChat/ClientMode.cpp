@@ -1,7 +1,7 @@
 #include "ClientMode.h"
 
 CLS clearScreen;
-clientSocket SOCKET;
+clientSocket mySOCKET;
 
 ClientMode::ClientMode()
 {
@@ -11,7 +11,7 @@ ClientMode::ClientMode()
 	{
 		mainMenu();
 		char IP = (char)_ip.c_str();
-		SOCKET.ConnectToHost(_port, &IP);
+		mySOCKET.ConnectToHost(_port, &IP);
 
 	}
 
