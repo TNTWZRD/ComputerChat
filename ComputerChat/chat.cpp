@@ -1,5 +1,7 @@
 #include "chat.h"
 
+CLS cls;
+
 chat::chat()
 {
 	enum programState
@@ -7,7 +9,6 @@ chat::chat()
 		STARTUP,
 		HOSTING_MODE,
 		MAINMENU,
-		CHATSCREEN,
 		LOGOUT
 	};
 
@@ -19,6 +20,7 @@ chat::chat()
 		bool modeSelection = 0;
 		while(!modeSelection)
 		{
+			cls.clear();
 			cout << "Please Select A Mode: (1)HOST (2)CLIENT (ESC)QUIT" << endl;
 			char i = _getch();
 			switch (i)
@@ -36,8 +38,6 @@ chat::chat()
 				pState = programState::LOGOUT;
 				break;
 			default:
-				modeSelection = 1;
-				pState = programState::MAINMENU;
 				break;
 			}
 		}
@@ -47,6 +47,8 @@ chat::chat()
 	{
 		cout << "Loaded Hosting Mode" << endl;
 
+		HostMode hosting;
+
 		pState = programState::LOGOUT;
 	}
 
@@ -54,12 +56,7 @@ chat::chat()
 	{
 		cout << "Loaded Main Menu Mode" << endl;
 
-		pState = programState::LOGOUT;
-	}
-
-	while (pState == programState::CHATSCREEN) // Chat Screen Code
-	{
-		cout << "Loaded Chat Screen Mode" << endl;
+		ClientMode chating;
 
 		pState = programState::LOGOUT;
 	}

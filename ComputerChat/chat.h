@@ -2,10 +2,13 @@
 
 #include <iostream>
 #include <conio.h>
+#include <Windows.h>
 
-#include "clientSocket.h"
-#include "hostSocket.h"
-#include "user.h"
+#include "ClientMode.h"
+#include "HostMode.h"
+#include "CLS.h"
+
+using namespace std;
 
 class chat
 {

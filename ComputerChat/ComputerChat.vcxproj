@@ -12,16 +12,26 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chat.h" />
+    <ClInclude Include="ClientMode.h" />
     <ClInclude Include="clientSocket.h" />
+    <ClInclude Include="CLS.h" />
+    <ClInclude Include="HostMode.h" />
     <ClInclude Include="hostSocket.h" />
     <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Visual Studio 2013\Projects\MyGame\MyGame\CLS.cpp" />
     <ClCompile Include="chat.cpp" />
+    <ClCompile Include="ClientMode.cpp" />
     <ClCompile Include="clientSocket.cpp" />
+    <ClCompile Include="CLS.cpp" />
+    <ClCompile Include="HostMode.cpp" />
     <ClCompile Include="hostSocket.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="user.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B8F2F5F3-2390-45FB-AC3D-227E22BAD999}</ProjectGuid>
