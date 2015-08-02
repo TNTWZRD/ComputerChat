@@ -12,6 +12,5 @@ public:
 	vector<string> conversation;
 	user(string name);
 private:
-
 };
 
