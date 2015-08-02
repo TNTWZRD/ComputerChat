@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="auth.h" />
     <ClInclude Include="chat.h" />
     <ClInclude Include="ClientMode.h" />
     <ClInclude Include="clientSocket.h" />

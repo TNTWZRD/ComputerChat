@@ -36,6 +36,9 @@
     <ClInclude Include="CLS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="auth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="clientSocket.cpp">
