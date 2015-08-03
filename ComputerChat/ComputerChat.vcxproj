@@ -16,6 +16,7 @@
     <ClInclude Include="ClientMode.h" />
     <ClInclude Include="clientSocket.h" />
     <ClInclude Include="CLS.h" />
+    <ClInclude Include="Handshake.h" />
     <ClInclude Include="HostMode.h" />
     <ClInclude Include="hostSocket.h" />
     <ClInclude Include="user.h" />
@@ -27,6 +28,7 @@
       <DeploymentContent>true</DeploymentContent>
     </ClCompile>
     <ClCompile Include="CLS.cpp" />
+    <ClCompile Include="Handshake.cpp" />
     <ClCompile Include="HostMode.cpp" />
     <ClCompile Include="hostSocket.cpp" />
     <ClCompile Include="main.cpp" />
