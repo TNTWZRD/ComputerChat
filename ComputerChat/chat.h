@@ -9,9 +9,9 @@
 
 using namespace std;
 
-class chat
+class Chat
 {
 public:
-	chat();
+	Chat();
 };
 

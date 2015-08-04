@@ -2,7 +2,7 @@
 
 SOCKET s;
 
-bool clientSocket::ConnectToHost(int PortNo, char* IPAddress)
+bool ClientSocket::ConnectToHost(int PortNo, char* IPAddress)
 {
 	OutputDebugString("[CleintSocket].[ConnectToHost]: Beginning Connection Sequence.\n");
 	WSADATA wsadata;
@@ -40,7 +40,7 @@ bool clientSocket::ConnectToHost(int PortNo, char* IPAddress)
 	}
 }
 
-void clientSocket::CloseConnection()
+void ClientSocket::CloseConnection()
 {
 	if (s)
 		closesocket(s);

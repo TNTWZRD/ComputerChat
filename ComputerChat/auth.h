@@ -45,9 +45,9 @@ class Auth
 
     public:
         AUTH_L createAuthKey(long len,
-                             std::string authname
+                             std::string authname,
                              short port,
-                             std::string servname,
+                             std::string servname
                             ) __KEY_EXPORT;
 
         AUTH_L acceptKey(struct _simci *keys,

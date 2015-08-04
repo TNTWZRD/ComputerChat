@@ -10,7 +10,7 @@
 
 enum PORT_MESSAGE
 {
-    SOCK_CANNOT_LISTEN,
+    SOCK_CANNOT_LISTEN, 
     SOCK_WAITING,
     SOCK_DEAD,
     SOCK_TIMEOUT,
@@ -28,21 +28,21 @@ unsigned int __defaultPort = 2202;
 // ! Client Port defaults !
 // ---------------------
 
-class clientSocket
+class ClientSocket
 {
 public:
     /**
      * \param _portno - Default client port
      * \param clientUID - Default client name to pass to the server
      */
-    clientSocket(int _portno, string clientUID);
+    ClientSocket(int _portno, string clientUID);
 
     bool ConnectToHost(int PortNo, char* IPAddress);
 
     void CloseConnection();
 
     // Deconstructor
-    virtual ~clientSocket();
+    virtual ~ClientSocket();
 };
 
 #endif // defined(CSOCK_H)
