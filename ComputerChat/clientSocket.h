@@ -1,11 +1,48 @@
 #pragma once
 
+#ifndef CSOCK_H
+#define CSOCK_H
+
+#include <cstdint>
 #include <winsock.h>
 
-class clientSocket
+#define MIN_PIPED_OBJECTS 1
+
+enum PORT_MESSAGE
 {
-public:
-	bool ConnectToHost(int PortNo, char* IPAddress);
-	void CloseConnection();
+    SOCK_CANNOT_LISTEN, 
+    SOCK_WAITING,
+    SOCK_DEAD,
+    SOCK_TIMEOUT,
+    SOCK_CONNECTED,
+    SOCK_PIPE_ACTIVE,
 };
 
+// ---------------------
+// Client Port Defaults
+// ---------------------
+
+unsigned int __defaultPort = 2202;
+
+// ---------------------
+// ! Client Port defaults !
+// ---------------------
+
+class ClientSocket
+{
+public:
+    /**
+     * \param _portno - Default client port
+     * \param clientUID - Default client name to pass to the server
+     */
+    ClientSocket(int _portno, string clientUID);
+
+    bool ConnectToHost(int PortNo, char* IPAddress);
+
+    void CloseConnection();
+
+    // Deconstructor
+    virtual ~ClientSocket();
+};
+
+#endif // defined(CSOCK_H)

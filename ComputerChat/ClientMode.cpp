@@ -1,7 +1,7 @@
 #include "ClientMode.h"
 
 CLS clearScreen;
-clientSocket mySOCKET;
+ClientSocket mySOCKET;
 
 ClientMode::ClientMode()
 {
@@ -30,6 +30,6 @@ void ClientMode::mainMenu()
 	cout << "Please Enter Your Password: ";
 	cin >> _password;
 
-	user User(_username);
+	User User(_username);
 
 }

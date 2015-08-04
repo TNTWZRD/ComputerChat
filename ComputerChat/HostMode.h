@@ -4,7 +4,7 @@
 
 class HostMode
 {
-public:
-	HostMode();
+    public:
+        HostMode();
 };
 

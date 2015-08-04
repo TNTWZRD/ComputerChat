@@ -3,7 +3,7 @@
 SOCKET h;
 WSADATA w;
 
-int hostSocket::ListenOnPort(int portno)
+int HostSocket::ListenOnPort(int portno)
 {
 	int error = WSAStartup(0x0202, &w);
 
@@ -34,7 +34,7 @@ int hostSocket::ListenOnPort(int portno)
 	listen(h, SOMAXCONN);
 }
 
-void hostSocket::CloseConnection()
+void HostSocket::CloseConnection()
 {
 	if (h)
 		closesocket(h);
