@@ -6,6 +6,7 @@
 #include "CLS.h"
 #include "clientSocket.h"
 #include "user.h"
+#include "auth.h"
 
 class ClientMode
 {

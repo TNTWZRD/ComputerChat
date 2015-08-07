@@ -25,11 +25,10 @@ void ClientMode::mainMenu()
 	cout << "Please Enter Password Of Chat Server: ";
 	cin >> _serverPassword;
 	clearScreen.clear();
-	cout << "Please Enter Your Username: ";
+	cout << "Please Enter Your Username(If Does Not Exist Will Be Created.): ";
 	cin >> _username;
 	cout << "Please Enter Your Password: ";
 	cin >> _password;
 
 	User User(_username);
-
 }
