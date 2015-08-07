@@ -16,7 +16,6 @@ class ClientMode
         // Set to 1 for admin status
         // Set to 2 for moderator status
         // Set to 3 for standard user
-        //
         // Set to 10 for elevated ROOT status
         // DO NOT ADD USER AS (10) UNLESS YOU KNOW EXPLICITY WHAT THE IMPLICATIONS ARE.
         // THAT USER WILL HAVE ACCESS TO VITAL SERVER SCRIPTS/FILES.

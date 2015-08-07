@@ -45,6 +45,9 @@
     <ClInclude Include="Explode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="HCmdParse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="clientSocket.cpp">

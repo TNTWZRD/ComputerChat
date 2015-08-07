@@ -18,6 +18,9 @@
     <ClInclude Include="CLS.h" />
     <ClInclude Include="Explode.h" />
     <ClInclude Include="Handshake.h" />
+    <ClInclude Include="HCmdParse.h">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
     <ClInclude Include="HostMode.h" />
     <ClInclude Include="hostSocket.h" />
     <ClInclude Include="user.h" />

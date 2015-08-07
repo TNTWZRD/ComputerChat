@@ -27,7 +27,7 @@ void ClientMode::mainMenu()
 	clearScreen.clear();
 	cout << "Please Enter Your Username(If Does Not Exist Will Be Created.): ";
 	cin >> _username;
-	cout << "Please Enter Your Password: ";
+	cout << "Please Enter Your Password(Will Set Password If Account Does Not Exist): ";
 	cin >> _password;
 
 	User User(_username);
