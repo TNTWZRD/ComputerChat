@@ -42,6 +42,9 @@
     <ClInclude Include="Handshake.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Explode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="clientSocket.cpp">
@@ -69,6 +72,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Handshake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Explode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
